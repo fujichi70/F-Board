@@ -1,0 +1,200 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.error {
+    display: inline-block;
+    color: rgb(253, 108, 108);
+    border-bottom: 1px solid rgb(253, 108, 108);
+    position: relative;
+    margin: 10px 0 10px 27px;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: -28px;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background: url(./img/exclamation.png) center/contain;
+        vertical-align: middle;
+    }
+}
+
+// ログイン
+.member-box {
+    margin-bottom: 40px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    dt {
+        width: 140px;
+        text-align: left;
+    }
+
+    dd {
+        width: 60%;
+    }
+
+    .input {
+        border: 1px solid rgba(112, 112, 112, 1);
+        border-radius: 20px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+.other-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    text-align: right;
+    padding: 10px 20px;
+    .btn {
+        font-size: 13px;
+    }
+}
+
+.main-img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+// 仮会員登録
+.preregister-text--free {
+    margin-bottom: 30px;
+}
+
+.preregister-text--explain {
+    margin: 20px 0;
+    border: 3px dotted rgba(255, 199, 68, 1);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#registration {
+    .common-title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+// 本会員登録
+.register-text {
+    margin-bottom: 30px;
+}
+
+.image-box {
+    margin-bottom: 30px;
+    .image-text {
+        margin: 30px 0 20px;
+    }
+
+    input[type="file"] {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .image-select {
+        padding: 10px 25px;
+        margin: 0 0 10px;
+        background: #aaa;
+        color: #fff;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .image-thumb {
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .image-pre {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+// 本登録確認画面
+.registration-confirm--box {
+    margin-bottom: 20px;
+}
+
+.registration-confirm--text {
+    font-size: 18px;
+    color: rgba(255, 199, 68, 1);
+    font-weight: bold;
+}
+
+.registration-confirm--btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.registration-confirm--img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+// 本登録完了画面
+.registration-complete--textbox {
+    padding: 30px 0;
+    height: 200px;
+
+    .registration-complete--thanks {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 auto;
+        width: 180px;
+        color: rgba(255, 199, 68, 1);
+        margin-bottom: 20px;
+        overflow: hidden;
+        animation: thanksAnime 2.5s infinite;
+    }
+
+    @keyframes thanksAnime {
+        0%,
+        40% {
+            transform: skew(0deg, 0deg);
+        }
+        5% {
+            transform: skew(5deg, 5deg);
+        }
+        10% {
+            transform: skew(-4deg, -4deg);
+        }
+        15% {
+            transform: skew(3deg, 3deg);
+        }
+        20% {
+            transform: skew(-2deg, -2deg);
+        }
+        25% {
+            transform: skew(1deg, 1deg);
+        }
+        30% {
+            transform: skew(-0.6deg, -0.6deg);
+        }
+        35% {
+            transform: skew(0.3deg, 0.3deg);
+        }
+    }
+}

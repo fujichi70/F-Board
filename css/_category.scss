@@ -1,0 +1,185 @@
+// カテゴリー別
+.category-box {
+    margin-bottom: 30px;
+    text-align: center;
+
+    .recipe-text {
+        .common-text {
+            &::after {
+                content: "レシピ相談";
+            }
+        }
+    }
+
+    .love-text {
+        .common-text {
+            &::after {
+                content: "恋愛相談";
+            }
+        }
+    }
+
+    .couple-text {
+        .common-text {
+            &::after {
+                content: "夫婦生活相談";
+            }
+        }
+    }
+
+    .childcare-text {
+        .common-text {
+            &::after {
+                content: "育児相談";
+            }
+        }
+    }
+
+    .work-text {
+        .common-text {
+            &::after {
+                content: "仕事相談";
+            }
+        }
+    }
+
+    .friends-text {
+        .common-text {
+            &::after {
+                content: "友人関係相談";
+            }
+        }
+    }
+
+    .category-img--parts {
+        margin-bottom: 50px;
+        text-align: center;
+        .category-img {
+            max-width: 100%;
+        }
+    }
+}
+
+#category {
+    padding: 50px 0 100px;
+
+    .common-title {
+        text-align: center;
+    }
+
+    .article-box {
+        margin: 0 auto 20px;
+        max-width: 600px;
+        border-bottom: 1px solid rgb(238, 167, 0);
+
+        .article-group {
+            width: 100%;
+            margin-bottom: 5px;
+            overflow: hidden;
+
+            .article-user {
+                float: left;
+                margin-right: -90px;
+                .article-user--img {
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                    border: solid 3px #fff0c6;
+                    border-radius: 50%;
+                }
+                .article-user--name {
+                    text-align: center;
+                }
+            }
+            .article-text {
+                width: 100%;
+                .article-text--box {
+                    display: inline-block;
+                    position: relative;
+                    margin: 5px 0 0 105px;
+                    padding: 17px 13px;
+                    border-radius: 12px;
+                    background: #fff0c6;
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        top: 18px;
+                        left: -24px;
+                        border: 12px solid transparent;
+                        border-right: 12px solid #fff0c6;
+                    }
+                }
+            }
+        }
+        .article-parts {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            .deleted-btn {
+                border: none;
+                border-radius: 20px;
+                background-color: rgb(238, 167, 0);
+                color: #fff;
+                padding: 5px 10px;
+                margin-bottom: 5px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(255, 179, 0);
+                }
+            }
+
+            .article-date {
+                text-align: right;
+                margin-left: auto;
+                .article-date--parts {
+                    letter-spacing: 0.2rem;
+                }
+            }
+        }
+    }
+
+    .post-box {
+        max-width: 100%;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2%;
+
+        .post-group {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: flex-end;
+
+            .post-input--area {
+                border: 1px solid rgb(238, 167, 0);
+                border-radius: 30px;
+                margin-right: 10px;
+                padding: 10px 20px;
+                resize: none;
+                font-family: Atlanta, sans-serif;
+                color: #707070;
+                overflow: hidden;
+            }
+
+            .post-input--btn {
+                padding: 5px 20px;
+                position: relative;
+            }
+
+            .post-input--btn {
+                padding: 5px 20px;
+                position: relative;
+            }
+        }
+        .alert {
+            position: absolute;
+            top: -60px;
+            right: -50px;
+            img {
+                width: 190px;
+            }
+        }
+    }
+}

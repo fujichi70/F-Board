@@ -1,0 +1,35 @@
+.deleted-box {
+    border: 3px dotted rgba(255, 199, 68, 1);
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    .deleted-items {
+    display: flex;
+    max-width: 500px;
+    .deleted-text {
+        text-align: left;
+        width: 10%;
+    }
+    .deleted-contents {
+        text-align: left;
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+
+}
+
+.deleted-confirm {
+    font-size: 16px;
+}
+
+.deleted-btns {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.deleted-complete--text {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,89 @@
+#main {
+    // メイン画像
+    .main-img-parts {
+        margin: 50px auto;
+        text-align: center;
+        padding: 0;
+        .main-img {
+            max-width: 100%;
+        }
+    }
+
+    // コンセプト
+    #concept {
+        text-align: center;
+        margin-bottom: 50px;
+        .wrapper {
+            padding: 0 40px 10px;
+        }
+        .concept-title {
+            font-size: 17px;
+            font-weight: bold;
+            color: rgb(238, 167, 0);
+            margin: 50px 0px 30px;
+        }
+        .concept-text {
+            line-height: 40px;
+        }
+    }
+}
+
+// カテゴリー
+#categories {
+        .wrapper {
+        margin-bottom: 50px;
+    }
+
+    .common-text {
+        &::after {
+            content: '閲覧・投稿方法';
+        }
+    }
+    .common-title {
+        margin-left: 20px;
+    }
+
+    .grid {
+        display: initial;
+    }
+
+    .categories-group {
+        .categories-box {
+            max-width: 450px;
+            display: flex;
+            box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.521);
+            align-items: center;
+            margin: 0 auto 30px;
+            background-color: #fff;
+            color: rgba(112, 112, 112, 1);
+
+            &:hover {
+                border: 3px dotted rgb(238, 167, 0);
+            }
+
+            &:active {
+                border: 3px solid rgb(238, 167, 0);
+                box-shadow: none;
+            }
+
+            .categories-img {
+                width: 40%;
+                height: auto;
+                object-fit: cover;
+            }
+            .categories-text {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 20px;
+            justify-content: space-evenly;
+        }
+    }
+}
+
